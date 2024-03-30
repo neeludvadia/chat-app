@@ -21,7 +21,14 @@ const Register = () => {
     autoClose: 4000,
     pauseOnHover: true,
     theme: "dark",
+    draggable: true
   };
+
+  useEffect(()=>{
+    if(localStorage.getItem('chat-app-user')){    //similar like session
+      navigate('/chat')
+    }
+  },[])
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -38,7 +45,7 @@ const Register = () => {
       }
       if (data.status === true) {
         localStorage.setItem("chat-app-user", JSON.stringify(data.user));
-        navigate("/");
+        navigate("/chat");
       }
     }
   };
