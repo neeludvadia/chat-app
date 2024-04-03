@@ -71,7 +71,7 @@ try{
     "email","username","avatarImage",
     "_id",
   ]);
-  return response.json(users);
+  return res.json(users);
 }catch (ex){
   next(ex);
 }
