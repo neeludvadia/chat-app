@@ -10,5 +10,5 @@ const Messages = () => {
 
 export default Messages;
 const Container = styled.div`
-height: 80%;
+height: 70vh;
 `;
