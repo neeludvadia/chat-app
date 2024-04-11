@@ -1,70 +1,103 @@
-import React from 'react'
-import styled from 'styled-components';
-import Logout from '../components/Logout';
-import ChatInput from './ChatInput';
-import Messages from './Messages';
-import axios from "axios";
-import { sendMessageRoute } from "../utils/APIRoutes"
-function ChatContainer({currentChat, currentUser}) {
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import Logout from "../components/Logout";
+import ChatInput from "./ChatInput";
+import Messages from "./Messages";
 
-  const handleSendMsg = async (msg)=>{
-    await axios.post(sendMessageRoute,{
+import axios from "axios";
+import { getAllMessagesRoute, sendMessageRoute } from "../utils/APIRoutes";
+function ChatContainer({ currentChat, currentUser }) {
+  const [messages, setMessages] = useState([]);
+
+  useEffect(() => {
+   const fetchData = async ()=>{
+
+     if(currentChat && currentUser){
+         const response =
+         await axios.post(getAllMessagesRoute, {
+           from: currentUser._id,
+           to: currentChat._id,
+          });    
+          setMessages(response.data);
+      };
+    }
+    
+      fetchData();      
+  }, [currentChat]);
+
+  const handleSendMsg = async (msg) => {
+    await axios.post(sendMessageRoute, {
       from: currentUser._id,
       to: currentChat._id,
       message: msg,
-    })
-  }
-
-
+    });
+  };
 
   return (
     <>
-    {
-      currentChat && ( 
-        
+      {currentChat && (
         <Container>
-        <div className="chat-header">
-        <div className="user-details">
-        <div className="avatar">
-        <img src={`data:image/svg+xml;base64,${currentChat.avatarImage}`} alt="avatar"/>
-        </div>
-        <div className="username">
-        <h3>{currentChat?currentChat.username:""}</h3>
-        </div>
-        </div>
-        <Logout/>
-        </div>
-        <Messages/>
-        <ChatInput handleSendMsg={handleSendMsg}/>
+          <div className="chat-header">
+            <div className="user-details">
+              <div className="avatar">
+                <img
+                  src={`data:image/svg+xml;base64,${currentChat.avatarImage}`}
+                  alt="avatar"
+                />
+              </div>
+              <div className="username">
+                <h3>{currentChat ? currentChat.username : ""}</h3>
+              </div>
+            </div>
+            <Logout />
+          </div>
+          <div className="chat-messages">
+            {
+              messages.map((message,key) => {
+                return (
+                  <div>
+                    <div
+                      className={`message ${
+                        message.fromSelf ? "sended" : "recieved"
+                      }`}
+                    >
+                      <div className="content">
+                        <p>{message.message}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+          <ChatInput handleSendMsg={handleSendMsg} />
         </Container>
-      )
-    }
+      )}
     </>
   );
 }
 
 const Container = styled.div`
-padding-top: 1rem;
-.chat-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-  .user-details {
+  padding-top: 1rem;
+  .chat-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    .avatar {
-      img {
-        height: 3rem;
+    padding: 0 2rem;
+    .user-details {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .avatar {
+        img {
+          height: 3rem;
+        }
       }
-    }
-    .username {
-      h3{
-        color: white;
+      .username {
+        h3 {
+          color: white;
+        }
       }
     }
   }
-}
 `;
-export default ChatContainer
+export default ChatContainer;
