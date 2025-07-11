@@ -7,8 +7,9 @@ import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { setAvatarRoute} from "../utils/APIRoutes";
 import { Buffer } from "buffer";
+import multiavatar from '@multiavatar/multiavatar/esm'
 const SetAvatar = () => {
-    const api = 'https://api.multiavatar.com/45678945.svg';
+    // const api = 'https://api.multiavatar.com/45678945.svg';
     const navigate = useNavigate();
     const [avatars,setAvatars] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -48,44 +49,28 @@ const SetAvatar = () => {
       };
 
       useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const data = [];
-                const fetchPromises = [];
-    
-                const Api = async () => {
-                    const response = await axios.get(`${api}/${Math.round(Math.random() * 1000)}`);
-                    console.log(response); // Check response to ensure it's what you expect
-                    return response.data; // Return the response data
-                };
-    
-                // Create an array of promises
-                for (let i = 0; i < 4; i++) {
-                    fetchPromises.push(Api());
-                }
-    
-                // Wait for all promises to resolve
-                const responses = await Promise.all(fetchPromises);
-    
-                // Process each response
-                responses.forEach(imageData => {
-                    // Convert response data to base64
-                    const base64data = Buffer.from(imageData).toString("base64");
-                    data.push(base64data);
-                });
-    
-                // Update state
-                setAvatars(data);
-                setIsLoading(false);
-            } catch (error) {
-                console.error("Error fetching avatars:", error);
-                // Handle error state or display error message
-                             
-            }
-        };
-    
-        fetchData(); // Call the async function
-    }, []);
+  const fetchData = async () => {
+    try {
+      const data = [];
+
+      for (let i = 0; i < 4; i++) {
+        const randomSeed = Math.random().toString(36).substring(2, 10);
+        const svgCode = multiavatar(randomSeed);
+        const base64 = btoa(unescape(encodeURIComponent(svgCode)));
+        data.push(base64);
+      }
+
+      setAvatars(data);
+    } catch (error) {
+      console.error("Error generating avatars:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  fetchData();
+}, []);
+
 
   return (
       <>
