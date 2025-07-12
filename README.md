@@ -25,23 +25,8 @@ A full-stack real-time chat application with one-to-one messaging, emoji support
 | Real-Time    | Socket.IO                        |
 | Auth         | JWT (JSON Web Token)             |
 
-
-## 📷 Screenshots
-
-### 🧑‍💻 Login & Register  
-<img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/5496e356-cc71-4f86-8e7d-8327e029ad56" />
-
-### 🖼️ Avatar Selection & Profile
-<img width="1144" height="779" alt="Avatar" src="https://github.com/user-attachments/assets/a3a9a64d-369c-471a-a877-da3248b14f58" />
-
-### 💬 Chat Interface
-<img width="1731" height="859" alt="afterlogin" src="https://github.com/user-attachments/assets/b140163e-179c-48c4-9939-c754106f02b7" />
-
-### 😊 Emoji Picker & Messaging  
-<img width="1707" height="826" alt="messaging" src="https://github.com/user-attachments/assets/367e5564-dbee-448a-911c-76c02ff26101" />
-
-
 ## 📁 Project Structure
+
 ```plaintext
 chat-app/
 ├── public/           # React frontend
@@ -66,10 +51,22 @@ chat-app/
 │   ├── package.json
 │   └── index.js
 ├── README.md
+```
 
 
+## 📷 Screenshots
 
+### 🧑‍💻 Login & Register  
+<img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/5496e356-cc71-4f86-8e7d-8327e029ad56" />
 
+### 🖼️ Avatar Selection & Profile
+<img width="1144" height="779" alt="Avatar" src="https://github.com/user-attachments/assets/a3a9a64d-369c-471a-a877-da3248b14f58" />
+
+### 💬 Chat Interface
+<img width="1731" height="859" alt="afterlogin" src="https://github.com/user-attachments/assets/b140163e-179c-48c4-9939-c754106f02b7" />
+
+### 😊 Emoji Picker & Messaging  
+<img width="1707" height="826" alt="messaging" src="https://github.com/user-attachments/assets/367e5564-dbee-448a-911c-76c02ff26101" />
 
 
 
