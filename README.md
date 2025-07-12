@@ -27,6 +27,7 @@ A full-stack real-time chat application with one-to-one messaging, emoji support
 
 ## 📁 Project Structure
 
+```plaintext
 chat-app/
 ├── public/           # React frontend
 │   ├── public/       # images and static assets
@@ -50,7 +51,6 @@ chat-app/
 │   ├── package.json
 │   └── index.js
 ├── README.md
-
 
 
 
