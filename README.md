@@ -28,28 +28,29 @@ A full-stack real-time chat application with one-to-one messaging, emoji support
 ## 📁 Project Structure
 
 chat-app/
-├── public/ # React frontend
-│ ├── public/ # images and static assets
-│ └── src/
-│ ├── assets/
-│ ├── components/
-│ ├── pages/
-│ ├── utils/
-│ ├── App.js
-│ ├── index.css
-│ ├── .gitignore
-│ ├── package.json
-│ ├── yarn.lock
-│ └── index.js
-├── server/ # Node.js backend
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── .env
-│ ├── .gitignore
-│ ├── package.json
-│ └── index.js
+├── public/           # React frontend
+│   ├── public/       # images and static assets
+│   └── src/
+│       ├── assets/
+│       ├── components/
+│       ├── pages/
+│       ├── utils/
+│       ├── App.js
+│       ├── index.css
+│       ├── .gitignore
+│       ├── package.json
+│       ├── yarn.lock
+│       └── index.js
+├── server/           # Node.js backend
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── .env
+│   ├── .gitignore
+│   ├── package.json
+│   └── index.js
 ├── README.md
+
 
 
 
