@@ -25,8 +25,23 @@ A full-stack real-time chat application with one-to-one messaging, emoji support
 | Real-Time    | Socket.IO                        |
 | Auth         | JWT (JSON Web Token)             |
 
+
+## 📷 Screenshots
+
+### 🧑‍💻 Login & Register  
+<img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/5496e356-cc71-4f86-8e7d-8327e029ad56" />
+
+### 🖼️ Avatar Selection & Profile
+<img width="1144" height="779" alt="Avatar" src="https://github.com/user-attachments/assets/a3a9a64d-369c-471a-a877-da3248b14f58" />
+
+### 💬 Chat Interface
+<img width="1731" height="859" alt="afterlogin" src="https://github.com/user-attachments/assets/b140163e-179c-48c4-9939-c754106f02b7" />
+
+### 😊 Emoji Picker & Messaging  
+<img width="1707" height="826" alt="messaging" src="https://github.com/user-attachments/assets/367e5564-dbee-448a-911c-76c02ff26101" />
+
+
 ## 📁 Project Structure
-<img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/0b13ce00-e873-43ea-b77d-98d9ec1a5e3d" />
 ```plaintext
 chat-app/
 ├── public/           # React frontend
@@ -54,21 +69,6 @@ chat-app/
 
 
 
-
-## 📷 Screenshots
-<img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/964f5691-c04c-4059-a7e2-acb2f65ef94f" />
-
-### 🧑‍💻 Login & Register  
-[<img src="https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/messaging.png" width="600" />](https://github.com/neeludvadia/chat-app/blob/master/ReadmeImages/Avatar.png)
-
-### 🖼️ Avatar Selection & Profile  
-![Avatar/Profile](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/Avatar.png)
-
-### 💬 Chat Interface  
-![Chat Interface](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/afterlogin.png)
-
-### 😊 Emoji Picker & Messaging  
-![Emoji & Messaging](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/messaging.png)
 
 
 
