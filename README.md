@@ -26,7 +26,7 @@ A full-stack real-time chat application with one-to-one messaging, emoji support
 | Auth         | JWT (JSON Web Token)             |
 
 ## 📁 Project Structure
-
+<img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/0b13ce00-e873-43ea-b77d-98d9ec1a5e3d" />
 ```plaintext
 chat-app/
 ├── public/           # React frontend
@@ -53,7 +53,7 @@ chat-app/
 ├── README.md
 
 
-<img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/0b13ce00-e873-43ea-b77d-98d9ec1a5e3d" />
+
 
 ## 📷 Screenshots
 <img width="1214" height="815" alt="login" src="https://github.com/user-attachments/assets/964f5691-c04c-4059-a7e2-acb2f65ef94f" />
