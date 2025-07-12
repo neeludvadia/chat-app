@@ -57,7 +57,7 @@ chat-app/
 ## 📷 Screenshots
 
 ### 🧑‍💻 Login & Register
-<img src="./ReadmeImages/login.png" width="600" alt="Login/Register" />
+![Login](./ReadmeImages/login.png)
 
 ### 🖼️ Avatar Selection & Profile
 <img src="./ReadmeImages/Avatar.png" width="600" alt="Avatar/Profile" />
