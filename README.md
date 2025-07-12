@@ -29,12 +29,12 @@ A full-stack real-time chat application with one-to-one messaging, emoji support
 
 chat-app/
 ├── public/ # React frontend
-| |── public/ #images
-│ |── src/
-│   └── components/
-    |── assests/
-│   ├── pages/
-│   ├── utils/
+│ ├── public/ # images and static assets
+│ └── src/
+│ ├── assets/
+│ ├── components/
+│ ├── pages/
+│ ├── utils/
 │ ├── App.js
 │ ├── index.css
 │ ├── .gitignore
