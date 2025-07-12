@@ -56,17 +56,18 @@ chat-app/
 
 ## 📷 Screenshots
 
-### 🧑‍💻 Login & Register
-<img src="./ReadmeImages/login.png" width="600" alt="Avatar/Profile" />
+### 🧑‍💻 Login & Register  
+![Login/Register](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/login.png)
 
-### 🖼️ Avatar Selection & Profile
-<img src="./ReadmeImages/Avatar.png" width="600" alt="Avatar/Profile" />
+### 🖼️ Avatar Selection & Profile  
+![Avatar/Profile](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/Avatar.png)
 
-### 💬 Chat Interface
-<img src="./ReadmeImages/afterlogin.png" width="600" alt="Chat Interface" />
+### 💬 Chat Interface  
+![Chat Interface](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/afterlogin.png)
 
-### 😊 Emoji Picker & Messaging
-<img src="./ReadmeImages/messaging.png" width="600" alt="Emoji and Messaging" />
+### 😊 Emoji Picker & Messaging  
+![Emoji & Messaging](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/messaging.png)
+
 
 
 
