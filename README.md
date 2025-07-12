@@ -57,7 +57,7 @@ chat-app/
 ## 📷 Screenshots
 
 ### 🧑‍💻 Login & Register  
-![Login/Register](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/login.png)
+<img src="https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/messaging.png" width="600" />
 
 ### 🖼️ Avatar Selection & Profile  
 ![Avatar/Profile](https://raw.githubusercontent.com/neeludvadia/chat-app/master/ReadmeImages/Avatar.png)
