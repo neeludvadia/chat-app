@@ -57,16 +57,16 @@ chat-app/
 ## 📷 Screenshots
 
 ### 🧑‍💻 Login & Register
-<img src="ReadmeImages/login.png" width="600" alt="Login/Register" />
+<img src="./ReadmeImages/login.png" width="600" alt="Login/Register" />
 
 ### 🖼️ Avatar Selection & Profile
-<img src="ReadmeImages/Avatar.png" width="600" alt="Avatar/Profile" />
+<img src="./ReadmeImages/Avatar.png" width="600" alt="Avatar/Profile" />
 
 ### 💬 Chat Interface
-<img src="ReadmeImages/afterlogin.png" width="600" alt="Chat Interface" />
+<img src="./ReadmeImages/afterlogin.png" width="600" alt="Chat Interface" />
 
 ### 😊 Emoji Picker & Messaging
-<img src="ReadmeImages/messaging.png" width="600" alt="Emoji and Messaging" />
+<img src="./ReadmeImages/messaging.png" width="600" alt="Emoji and Messaging" />
 
 
 
