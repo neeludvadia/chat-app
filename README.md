@@ -25,8 +25,6 @@ A full-stack real-time chat application with one-to-one messaging, emoji support
 | Real-Time    | Socket.IO                        |
 | Auth         | JWT (JSON Web Token)             |
 
----
-
 ## 📁 Project Structure
 
 chat-app/
@@ -52,6 +50,7 @@ chat-app/
 │ ├── package.json
 │ └── index.js
 ├── README.md
+
 
 
 📷 Screenshots
